@@ -1,0 +1,24 @@
+<html><head>
+<title>JavaScript Form Validation using a sample registration form</title>
+<link rel='stylesheet' href='check.css' type='text/css' />
+<script src="check.js"></script>
+</head>
+<body onload="document.registration.userid.focus();">
+<h1>Registration Form</h1>
+<form name='registration' onSubmit="return formValidation();">
+<ul>
+<li><label for="userid">User id:</label></li>
+<li><input type="text" name="userid" size="12" /></li>
+<li><label for="passid">Password:</label></li>
+<li><input type="password" name="passid" size="12" /></li>
+<li><label for="username">Name:</label></li>
+<li><input type="text" name="username" size="50" /></li>
+<li><label for="address">Address:</label></li>
+<li><input type="text" name="address" size="50" /></li>
+<li><label for="email">Email:</label></li>
+<li><input type="text" name="email" size="50" /></li>
+<li><input type="submit" name="submit" value="Submit" /></li>
+</ul>
+</form>
+</body>
+</html>
