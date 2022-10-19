@@ -1,0 +1,28 @@
+<html>
+<body>
+<h2>Displaying Time</h2>
+
+<p id="Time">00:00:00 AM/PM</p>
+
+<button onclick="Stop()">Stop the time</button>
+
+<script>
+    
+const interval = setInterval(Start, 1000);
+  function Start()
+  {
+    const date = new Date();
+    document.getElementById("Time").innerHTML = date.toLocaleTimeString();
+  }
+
+
+
+
+function Stop() 
+{
+  clearInterval (interval);
+}
+</script>
+
+</body>
+</html>
